@@ -1,5 +1,5 @@
 package org.example;
 
-public interface Cama {
+public interface ICama {
     String descrever();
 }

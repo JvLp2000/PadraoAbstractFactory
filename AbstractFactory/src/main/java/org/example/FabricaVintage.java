@@ -1,18 +1,18 @@
 package org.example;
 
-public class FabricaVintage implements FabricaAbstrata {
+public class FabricaVintage implements IFabricaAbstrata {
     @Override
-    public Sofa createSofa() {
+    public ISofa createSofa() {
         return new SofaVintage();
     }
 
     @Override
-    public Cama createCama() {
+    public ICama createCama() {
         return new CamaVintage();
     }
 
     @Override
-    public GuardaRoupa createGuardaRoupa() {
+    public IGuardaRoupa createGuardaRoupa() {
         return new GuardaRoupaVintage();
     }
 }

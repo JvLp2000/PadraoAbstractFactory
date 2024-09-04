@@ -9,22 +9,22 @@ class FabricaModernaTest {
 
     @Test
     void deveCriarSofaModerno() {
-        FabricaAbstrata fabrica = new FabricaModerna();
-        Sofa sofa = fabrica.createSofa();
+        IFabricaAbstrata fabrica = new FabricaModerna();
+        ISofa sofa = fabrica.createSofa();
         assertEquals("Sofá Moderno", sofa.descrever());
     }
 
     @Test
     void deveCriarCamaModerna() {
-        FabricaAbstrata fabrica = new FabricaModerna();
-        Cama cama = fabrica.createCama();
+        IFabricaAbstrata fabrica = new FabricaModerna();
+        ICama cama = fabrica.createCama();
         assertEquals("Cama Moderna", cama.descrever());
     }
 
     @Test
     void deveCriarGuardaRoupaModerno() {
-        FabricaAbstrata fabrica = new FabricaModerna();
-        GuardaRoupa guardaRoupa = fabrica.createGuardaRoupa();
+        IFabricaAbstrata fabrica = new FabricaModerna();
+        IGuardaRoupa guardaRoupa = fabrica.createGuardaRoupa();
         assertEquals("Guarda-Roupa Moderno", guardaRoupa.descrever());
     }
 }

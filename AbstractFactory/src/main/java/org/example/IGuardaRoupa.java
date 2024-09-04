@@ -1,5 +1,5 @@
 package org.example;
 
-public interface Sofa {
+public interface IGuardaRoupa {
     String descrever();
 }
